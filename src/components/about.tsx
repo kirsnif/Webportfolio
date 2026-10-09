@@ -5,7 +5,7 @@ export default function About(){
         <section className="py-12">
         <h2 className="text-2xl font-bold">About me</h2>
         <p className="mt-4 max-w-2xl text-gray-400">
-          background, motivation, what Im learning
+          I love learning new things, which is why I chose software development.   
         </p>
         <ul className="mt-6 flex flex-wrap gap-3">
           {skills.map((skill) => (

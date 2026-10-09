@@ -5,7 +5,7 @@ export default function ContactCall(){
         <section className="py-20 text-center">
         <h2 className="text-3xl font-bold">Let&apos;s talk</h2>
         <p className="mt-3 text-gray-400">
-          Looking for a developer, or just want to say hi?
+          What brought you here? I'd love to know!
         </p>
         <Link
           href="/contact"

@@ -7,7 +7,7 @@ const timeline = [
   },
   {
     period: "05 / 2025 – 09 / 2025",
-    title: "Focused Career Preperation IT",
+    title: "Career Preperation IT",
     place: "ESPAS, Zürich",
     description: "description",
   },
@@ -15,30 +15,6 @@ const timeline = [
     period: "10 / 2024 – 05 / 2025",
     title: "Career Assessment IT",
     place: "Santis, Lenzburg",
-    description: "description",
-  },
-  {
-    period: "02 / 2024 – 10 / 2024",
-    title: "Housekeeping Staff Member",
-    place: "Wendepunkt, Muhen",
-    description: "description",
-  },
-  {
-    period: "02 / 2023 – 12 / 2023",
-    title: "Integration Program",
-    place: "Wendepunkt, Wettingen",
-    description: "description",
-  },
-  {
-    period: "2020 – 2023",
-    title: "FMS, Social Work",
-    place: "Fachmittelschule, Wettingen",
-    description: "description",
-  },
-  {
-    period: "2010 – 2020",
-    title: "Obligatory School",
-    place: "Klingnau / Wettingen",
     description: "description",
   },
 ];
