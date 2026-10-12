@@ -28,7 +28,7 @@ export default function Greeting() {
           <div className="mt-8 flex">
             <Link
               href="/contact"
-              className="rounded-full border border-white/20 px-5 py-3 hover:border-white/50"
+              className="rounded-full border border-white/20 px-5 py-1 hover:border-white/50"
             >
               My CV
             </Link>
