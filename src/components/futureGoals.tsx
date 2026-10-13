@@ -62,7 +62,7 @@ function Pendulum({ label, Icon, length }: Goal) {
 export default function FutureGoals() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-12">
-      <h2 className="text-2xl font-bold">What's next</h2>
+      <h2 className="text-2xl font-bold">What&apos;s next</h2>
       <div className="mt-8 border-t border-white/20 pb-8">
         <div className="flex flex-wrap justify-around gap-y-8">
           {goals.map((goal) => (
