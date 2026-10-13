@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
   return {
-    title: project ? `${project.title} | Your Name` : "Project not found",
+    title: project ? `${project.title} | Kiera` : "Project not found",
   };
 }
 
@@ -42,7 +42,9 @@ export default async function ProjectPage({ params }: PageProps) {
       </ul>
 
       <div className="mt-8 flex aspect-video items-center justify-center rounded-xl bg-white/5 text-gray-500">
-        Screenshot
+        {project.image && (
+          <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+        )}
       </div>
 
       <h2 className="mt-10 text-xl font-semibold">About this project</h2>
@@ -51,7 +53,7 @@ export default async function ProjectPage({ params }: PageProps) {
       <h2 className="mt-10 text-xl font-semibold text-violet-400">What I learned</h2>
       <p className="mt-3 text-gray-300">{project.learned}</p>
 
-      {(project.github || project.demo) && (
+      {(project.github) && (
         <div className="mt-10 flex gap-4">
           {project.github && (
             <a
@@ -61,16 +63,6 @@ export default async function ProjectPage({ params }: PageProps) {
               className="rounded-lg bg-violet-400 px-5 py-2 font-semibold text-black hover:bg-violet-300"
             >
               View code
-            </a>
-          )}
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg border border-white/20 px-5 py-2 hover:border-white/50"
-            >
-              Live demo
             </a>
           )}
         </div>

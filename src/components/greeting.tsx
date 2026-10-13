@@ -34,7 +34,7 @@ export default function Greeting() {
             </Link>
           </div>
         </div>
-        <img src="/images/potat.jpg" alt="Kiera" className="flex h-64 w-64 items-center justify-center rounded-full border border-dashed border-white/30 text-gray-500" />
+        <img src="/images/catSketch.jpg" alt="Profile picture" className="flex h-64 w-64 items-center justify-center rounded-full border border-dashed border-white/30 text-gray-500" />
       </section>
     );
 }

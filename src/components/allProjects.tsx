@@ -1,18 +1,19 @@
 export type Project = {
   slug: string;
   title: string;
+  image?: string;
   summary: string;
   description: string;
   tech: string[];
   learned: string;
   github?: string;
-  demo?: string;
 };
 
 export const projects: Project[] = [
   {
     slug: "webportfolio",
     title: "Webportfolio",
+    image: "/images/youHere.jpg",
     summary: "My personal portfolio website built with Next.js and Tailwind CSS.",
     description: "You're currently viewing it! This project is my first attempt at building a visually appealing and responsive website. It showcases my skills, projects, and provides a way for visitors to contact me.",
     tech: ["Next.js", "Tailwind", "TypeScript"],
@@ -22,8 +23,9 @@ export const projects: Project[] = [
   {
     slug: "attendance-tracker",
     title: "Attendance Tracker",
+    image: "/images/codeAT.png",
     summary: "A project built for my extensive learning report.",
-    description: "The main purpose of this project was to learn how to build an application that takes user input, processes it, stores it in a local database and displays it using an Excel spreadsheet.",
+    description: "The main purpose of this project was to learn how to build an application that takes user input, processes it, stores it in a local database and displays it using an Excel spreadsheet. The code snippet I've used here shows how it handles days between user inputs. Unfortunatly, given the nature of the task, the documentation was the main focus and the app itself, though functional, isn't the most polished.",
     tech: ["Python", "SQLite", "Excel"],
     learned: "I learnt how to create a simple GUI using Python and Tkinter, how to store data in a local SQLite database, how to generate statistics from that data using Pandas and how to display that data in an Excel spreadsheet using OpenPyXL.",
     github: "https://github.com/kirsnif/AttendanceTracker",
@@ -31,6 +33,7 @@ export const projects: Project[] = [
   {
     slug: "todo-app",
     title: "To-Do App",
+    image: "/images/todoApp.png",
     summary: ".NET project for tracking tasks.",
     description: "A single page application built using Blazor and C# for tracking tasks. It allows users to add, edit, delete and mark tasks as complete or in progress. I designed the UI using CSS and implemented the functionality using C# and Blazor. The application uses Dapper to interact with a MariaDB database that exists in a Docker container.",
     tech: ["Blazor", "C#", "Dapper", "MariaDB", "Docker"],

@@ -1,9 +1,13 @@
 import Image from "next/image";
 
 const photos = [
-  { src: "/images/flower.jpg", alt: "Flower" },
-  { src: "/images/dog.jpg", alt: "Dog" },
-  { src: "/images/potat.jpg", alt: "Potato" }
+  { src: "/images/shetland.jpg", alt: "Shetland" },
+  { src: "/images/deer.jpg", alt: "Deer" },
+  { src: "/images/mitsBooks.jpg", alt: "Cat and View" },
+  { src: "/images/grimsel.jpg", alt: "Grimsel pass" },
+  { src: "/images/lakedistr.jpg", alt: "Lake District" },
+  { src: "/images/modelShip.jpg", alt: "Model boat" },
+  { src: "/images/mitsLaptop.jpg", alt: "Cat and Laptop" },
 ];
 
 export default function PhotoStrip() {

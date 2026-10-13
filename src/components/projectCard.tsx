@@ -6,10 +6,12 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="block overflow-hidden rounded-xl border border-white/10 bg-white/5 transition hover:border-emerald-400/50 hover:bg-white/10"
+      className="block overflow-hidden rounded-xl border border-white/10 bg-white/5 transition hover:border-violet-400/50 hover:bg-white/10"
     >
       <div className="flex aspect-video items-center justify-center bg-white/5 text-gray-500">
-        Cover image
+        {project.image && (
+          <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+        )}
       </div>
       <div className="p-5">
         <h3 className="text-lg font-semibold">{project.title}</h3>
