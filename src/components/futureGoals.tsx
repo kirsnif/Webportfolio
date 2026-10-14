@@ -14,13 +14,13 @@ import {
 type Goal = {
   label: string;
   Icon: LucideIcon;
-  length: number; // string length in px
+  length: number;
 };
 
 const goals: Goal[] = [
   { label: "Finish my EFZ", Icon: GraduationCap, length: 80 },
   { label: "Further education", Icon: Rocket, length: 60 },
-    { label: "Learn Java", Icon: Code, length: 70 },
+  { label: "Learn Java", Icon: Code, length: 70 },
   { label: "Stay fit", Icon: Dumbbell, length: 90 },
   { label: "Travel", Icon: Plane, length: 50 },
 ];

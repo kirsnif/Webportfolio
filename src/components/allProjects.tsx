@@ -17,7 +17,7 @@ export const projects: Project[] = [
     summary: "My personal portfolio website built with Next.js and Tailwind CSS.",
     description: "You're currently viewing it! This project is my first attempt at building a visually appealing and responsive website. It showcases my skills, projects, and provides a way for visitors to contact me.",
     tech: ["Next.js", "Tailwind", "TypeScript"],
-    learned: "All the tools I used to build this website, including Next.js, Tailwind CSS, and TypeScript were new to me so I learned a lot about them while building this project. I also learned about responsive design as well as dynamic and static routing.",
+    learned: "All the tools I used to build this website, including Next.js, Tailwind CSS, and TypeScript were new to me so I learned a lot about them while building this project. I also learned about responsive design as well as static routing.",
     github: "https://github.com/kirsnif/Webportfolio",
   },
   {
