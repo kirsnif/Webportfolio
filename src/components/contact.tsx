@@ -69,7 +69,7 @@ export default function ContactForm() {
               type="email"
               required
               maxLength={200}
-              placeholder="Your Email"
+              placeholder="Your email"
               className={inputClass}
             />
           </div>
@@ -86,12 +86,11 @@ export default function ContactForm() {
             minLength={10}
             maxLength={5000}
             rows={5}
-            placeholder="Your message goes here. Ask me anything"
+            placeholder="Your message, ask me anything"
             className={`${inputClass} resize-y`}
           />
         </div>
 
-        {/* Honeypot: invisible to humans and screen readers, bots fill it in */}
         <div className="hidden" aria-hidden="true">
           <label htmlFor="website">Website</label>
           <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
@@ -100,7 +99,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="rounded-lg border border-white/20 px-6 py-2 text-sm font-semibold transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
+          className="rounded-lg bg-violet-500 px-6 py-2 text-sm font-semibold text-black transition hover:bg-violet-300 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {status === "sending" ? "Sending..." : "Send message"}
         </button>
