@@ -29,7 +29,7 @@ const hobbies: Hobby[] = [
 
 export default function Hobbies() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-12">
+    <section className="mx-auto max-w-5xl px-6">
       <h2 className="text-3xl font-bold">Hobbies</h2>
       <div className="mt-10 space-y-16">
         {hobbies.map((hobby, index) => (

@@ -12,7 +12,7 @@ const photos = [
 
 export default function PhotoStrip() {
   return (
-    <section className="marquee overflow-hidden py-8">
+    <section className="marquee w-full max-w-full overflow-hidden py-6 md:py-8">
       <div className="marquee-track flex w-max">
         {[...photos, ...photos].map((photo, i) => {
           const isCopy = i >= photos.length;
@@ -24,7 +24,7 @@ export default function PhotoStrip() {
                 alt={isCopy ? "" : photo.alt}
                 width={320}
                 height={224}
-                className="h-56 w-80 rounded-xl object-cover"
+                className="h-36 w-52 rounded-xl object-cover sm:h-56 sm:w-80"
               />
             </div>
           );

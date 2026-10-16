@@ -14,13 +14,13 @@ export default function Greeting() {
           <div className="mt-8 flex gap-4">
             <Link
               href="/projects"
-              className="rounded-lg bg-violet-500 px-5 py-3 font-semibold text-black hover:bg-violet-300"
+              className="flex-1 whitespace-nowrap rounded-lg bg-violet-500 px-4 py-3 text-center text-sm font-semibold text-black hover:bg-violet-300 sm:flex-none sm:px-5 sm:text-base"
             >
               View projects
             </Link>
             <Link
               href="/contact"
-              className="rounded-lg border border-white/20 px-5 py-3 hover:border-white/50"
+              className="flex-1 whitespace-nowrap rounded-lg border border-white/20 px-4 py-3 text-center text-sm hover:border-white/50 sm:flex-none sm:px-5 sm:text-base"
             >
               Contact me
             </Link>

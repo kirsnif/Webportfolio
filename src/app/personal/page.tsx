@@ -6,7 +6,7 @@ import Thanks from "@/components/thanks";
 
 export default function Personal(){
     return(
-        <main className="mx-auto max-w-5xl px-6">
+        <main className="mx-auto w-full max-w-5xl px-6">
             <GreetingPers />
             <PhotoStrip />
             <Hobbies />

@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     slug: "todo-app",
     title: "To-Do App",
-    image: "/images/todoApp.png",
+    image: "/images/TodoApp.png",
     summary: ".NET project for tracking tasks.",
     description: "A single page application built using Blazor and C# for tracking tasks. It allows users to add, edit, delete and mark tasks as complete or in progress. I designed the UI using CSS and implemented the functionality using C# and Blazor. The application uses Dapper to interact with a MariaDB database that exists in a Docker container.",
     tech: ["Blazor", "C#", "Dapper", "MariaDB", "Docker"],

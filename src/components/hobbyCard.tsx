@@ -20,8 +20,8 @@ export default function HobbyCard({
 }: HobbyCardProps) {
   return (
     <article
-      className={`flex flex-col items-center gap-6 md:gap-10 ${
-        reverse ? "md:flex-row-reverse" : "md:flex-row"
+      className={`flex items-center gap-4 md:gap-10 ${
+        reverse ? "flex-row-reverse" : "flex-row"
       }`}
     >
       <Image
@@ -29,11 +29,11 @@ export default function HobbyCard({
         alt={alt}
         width={640}
         height={448}
-        className="h-64 w-full rounded-xl object-cover md:w-1/2"
+        className="h-28 w-28 shrink-0 rounded-xl object-cover sm:h-36 sm:w-36 md:h-64 md:w-1/2 md:shrink"
       />
-      <div className="md:w-1/2">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="mt-3 text-gray-400">{description}</p>
+      <div className="min-w-0 md:w-1/2">
+        <h3 className="text-lg font-semibold md:text-xl">{title}</h3>
+        <p className="mt-2 text-sm text-gray-400 md:mt-3 md:text-base">{description}</p>
       </div>
     </article>
   );

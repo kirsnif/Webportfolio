@@ -45,15 +45,15 @@ function Pendulum({ label, Icon, length }: Goal) {
     <div
       onMouseEnter={handleEnter}
       onClick={() => swing(30)}
-      className="flex w-20 cursor-pointer flex-col items-center"
+      className="flex w-full cursor-pointer flex-col items-center"
     >
       <div ref={scope} className="flex origin-top flex-col items-center">
         <span className="-mt-1 h-2 w-2 rounded-full bg-gray-500" />
         <span className="w-px bg-white/30" style={{ height: length }} />
-        <div className="rounded-xl border border-white/10 bg-white/5 p-3 text-gray-200">
+        <div className="rounded-xl border border-white/10 bg-white/5 p-2 text-gray-200 sm:p-3">
           <Icon size={24} />
         </div>
-        <span className="mt-2 text-center text-xs text-gray-400">{label}</span>
+        <span className="mt-2 text-center text-[10px] leading-tight text-gray-400 sm:text-xs">{label}</span>
       </div>
     </div>
   );
@@ -61,10 +61,10 @@ function Pendulum({ label, Icon, length }: Goal) {
 
 export default function FutureGoals() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-12">
+    <section className="py-12">
       <h2 className="text-2xl font-bold">What&apos;s next</h2>
       <div className="mt-8 border-t border-white/20 pb-8">
-        <div className="flex flex-wrap justify-around gap-y-8">
+        <div className="grid grid-cols-5">
           {goals.map((goal) => (
             <Pendulum key={goal.label} {...goal} />
           ))}
