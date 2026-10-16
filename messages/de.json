@@ -1,27 +1,46 @@
 {
   "Nav": {
-    "professional": "Beruflich",
-    "projects": "Projekte",
-    "personal": "Persönlich",
-    "contact": "Kontakt",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schliessen"
+      "professional": "Beruflich",
+      "projects": "Projekte",
+      "personal": "Persönlich",
+      "contact": "Kontakt",
+      "openMenu": "Menü öffnen",
+      "closeMenu": "Menü schliessen"
   },
-  "About": {
-    "title": "Über mich",
-    "text": "Ich lerne gerne Neues, deshalb habe ich mich für die Softwareentwicklung entschieden."
+    "About": {
+      "title": "Über mich",
+      "text": "Ich lerne gerne Neues, deshalb habe ich mich für die Softwareentwicklung entschieden."
   },
   "ContactCall": {
-    "title": "Lass uns reden",
-    "text": "Hast du Fragen oder möchtest du einfach nur mal Hallo sagen?",
-    "button": "Kontakt aufnehmen"
+      "title": "Lass uns reden",
+      "text": "Hast du Fragen oder möchtest du einfach nur mal Hallo sagen?",
+      "button": "Kontakt aufnehmen"
     },
     "Greeting": {
-      "title": "Applikationsentwicklerin EFZ",
-      "intro": "Hallo, ich bin Kiera",
-      "desc": "Problemlösung | Ideen verknüpfen | Lösungen entwickeln",
-      "proj": "Meine Projekte",
-      "contact": "Kontakt aufnehmen",
-      "cv": "Lebenslauf"
+        "title": "Applikationsentwicklerin EFZ",
+        "intro": "Hallo, ich binl  Kiera",
+        "desc": "Problemlösung | Ideen verknüpfen | Lösungen entwickeln",
+        "proj": "Meine Projekte",
+        "contact": "Kontakt aufnehmen",
+        "cv": "Lebenslauf"
+    },
+    "ContactForm": {
+        "title" : "Kontakt aufnehmen"
+    },
+    "GreetingPers": {
+        "title": "Lerne mich kennen",
+        "desc": "Lehrling Applikationsentwicklung | Zürich | Englisch zu Hause, Deutsch bei der Arbeit | lerne immer etwas Neues",
+        "prof": "Beruflich",
+        "contact": "Kontaktiere mich" 
+    },
+    "Hobbies": {
+        "title": "Hobbys"
+    },
+    "SomeProjects": {
+        "title": "Einige meiner Projekte"
+    },
+    "Thanks": {
+        "title": "Vielen Dank",
+        "sub": "für den Besuch auf meinem Profil"
     }
 }

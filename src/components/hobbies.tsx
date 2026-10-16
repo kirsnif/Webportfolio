@@ -1,4 +1,5 @@
 import HobbyCard, { type Hobby } from "@/components/hobbyCard";
+import { useTranslations } from "next-intl";
 
 const hobbies: Hobby[] = [
   {
@@ -28,9 +29,12 @@ const hobbies: Hobby[] = [
 ];
 
 export default function Hobbies() {
+  const t = useTranslations("Hobbies")
   return (
     <section className="mx-auto max-w-5xl px-6">
-      <h2 className="text-3xl font-bold">Hobbies</h2>
+      <h2 className="text-3xl font-bold">
+        {t("title")}
+      </h2>
       <div className="mt-10 space-y-16">
         {hobbies.map((hobby, index) => (
           <HobbyCard key={hobby.title} {...hobby} reverse={index % 2 === 1} />

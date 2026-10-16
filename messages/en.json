@@ -23,5 +23,24 @@
         "proj": "View projects",
         "contact": "Contact me",
         "cv": "My CV"
+    },
+    "ContactForm": {
+        "title" : "Get in touch"
+    },
+    "GreetingPers": {
+        "title": "Get to know me",
+        "desc": "Apprentice developer | Zürich based | English at home, German at work | always learning something new",
+        "prof": "Professional",
+        "contact": "Contact me" 
+    },
+    "Hobbies": {
+        "title": "Hobbies"
+    },
+    "SomeProjects": {
+        "title": "Some of my projects"
+    },
+    "Thanks": {
+        "title": "Thank you",
+        "sub": "for visiting my profile"
     }
 }

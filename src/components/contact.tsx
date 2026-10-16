@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -10,6 +11,7 @@ const inputClass =
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const t = useTranslations("ContactForm");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault(); 
@@ -40,7 +42,9 @@ export default function ContactForm() {
 
   return (
     <section className="py-12">
-      <h2 className="text-2xl font-bold">Get in touch</h2>
+      <h2 className="text-2xl font-bold">
+        {t("title")}
+      </h2>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-6">
         <div className="grid gap-6 md:grid-cols-2">
