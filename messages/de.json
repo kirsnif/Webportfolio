@@ -6,5 +6,22 @@
     "contact": "Kontakt",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schliessen"
-  }
+  },
+  "About": {
+    "title": "Über mich",
+    "text": "Ich lerne gerne Neues, deshalb habe ich mich für die Softwareentwicklung entschieden."
+  },
+  "ContactCall": {
+    "title": "Lass uns reden",
+    "text": "Hast du Fragen oder möchtest du einfach nur mal Hallo sagen?",
+    "button": "Kontakt aufnehmen"
+    },
+    "Greeting": {
+      "title": "Applikationsentwicklerin EFZ",
+      "intro": "Hallo, ich bin Kiera",
+      "desc": "Problemlösung | Ideen verknüpfen | Lösungen entwickeln",
+      "proj": "Meine Projekte",
+      "contact": "Kontakt aufnehmen",
+      "cv": "Lebenslauf"
+    }
 }

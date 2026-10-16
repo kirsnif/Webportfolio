@@ -1,17 +1,21 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function ContactCall(){
+    const t = useTranslations("ContactCall");
     return(
         <section className="py-20 text-center">
-        <h2 className="text-3xl font-bold">Let&apos;s talk</h2>
+        <h2 className="text-3xl font-bold">
+          {t("title")}
+        </h2>
         <p className="mt-3 text-gray-400">
-          Do you have any questions or just want to say hi?
+          {t("text")}
         </p>
         <Link
           href="/contact"
           className="mt-6 inline-block rounded-lg bg-violet-500 px-6 py-3 font-semibold text-black hover:bg-violet-300"
         >
-          Get in touch
+          {t("button")}
         </Link>
       </section>
     );

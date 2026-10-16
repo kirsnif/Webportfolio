@@ -6,5 +6,22 @@
         "contact": "Contact",
         "openMenu": "Open menu",
         "closeMenu": "Close menu"
+    },
+    "About": {
+        "title": "About me",
+        "text": "I love learning new things, which is why I chose software development."
+    },
+    "ContactCall": {
+        "title": "Let's talk",
+        "text": "Do you have any questions or just want to say hi?",
+        "button": "Get in touch"
+    },
+    "Greeting": {
+        "title": "Application Developer Apprentice EFZ",
+        "intro": "Hi, I'm Kiera",
+        "desc": "Problem Solving | Connecting Ideas | Developing Solutions",
+        "proj": "View projects",
+        "contact": "Contact me",
+        "cv": "My CV"
     }
 }
