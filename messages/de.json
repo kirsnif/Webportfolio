@@ -1,0 +1,10 @@
+{
+  "Nav": {
+    "professional": "Beruflich",
+    "projects": "Projekte",
+    "personal": "Persönlich",
+    "contact": "Kontakt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schliessen"
+  }
+}
