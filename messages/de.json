@@ -42,5 +42,10 @@
     "Thanks": {
         "title": "Vielen Dank",
         "sub": "für den Besuch auf meinem Profil"
+    },
+    "Project": {
+        "about": "Über dieses Projekt",
+        "learned": "Was ich gelernt habe",
+        "return": "← Alle Projekte"
     }
 }
