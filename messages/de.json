@@ -17,15 +17,24 @@
       "button": "Kontakt aufnehmen"
     },
     "Greeting": {
-        "title": "Applikationsentwicklerin EFZ",
-        "intro": "Hallo, ich binl  Kiera",
+        "title": "Informatikerin EFZ",
+        "intro": "Hallo, ich bin  Kiera",
         "desc": "Problemlösung | Ideen verknüpfen | Lösungen entwickeln",
         "proj": "Meine Projekte",
         "contact": "Kontakt aufnehmen",
         "cv": "Lebenslauf"
     },
     "ContactForm": {
-        "title" : "Kontakt aufnehmen"
+        "title": "Kontakt aufnehmen",
+        "name": "Name",
+        "email": "Email Adresse",
+        "content": "Inhalt",   
+        "send": "Nachricht senden",
+        "tmessage": "Deine Nachricht",
+        "tname": "Dein Name",
+        "temail": "Deine Email",
+        "success": "Vielen Dank, deine Nachricht wurde gesendet!",
+        "error": "Etwas ist schiefgelaufen. Bitte versuche es später nochmals."
     },
     "GreetingPers": {
         "title": "Lerne mich kennen",
@@ -35,6 +44,10 @@
     },
     "Hobbies": {
         "title": "Hobbys"
+    },
+    "AllProjects": {
+        "title": "Meine Projekte",
+        "button": "Code ansehen"
     },
     "SomeProjects": {
         "title": "Einige meiner Projekte"
@@ -47,5 +60,11 @@
         "about": "Über dieses Projekt",
         "learned": "Was ich gelernt habe",
         "return": "← Alle Projekte"
+    },
+    "Timeline": {
+        "title": "Erfahrung und Ausbildung"
+    },
+    "Goals": {
+        "title": "Ziele"
     }
 }

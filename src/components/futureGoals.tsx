@@ -1,6 +1,10 @@
 "use client";
 
+import type { Localized } from "@/i18n/localized";
 import type { MouseEvent } from "react";
+import { pick } from "@/i18n/localized";
+import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useAnimate, useReducedMotion } from "motion/react";
 import {
   GraduationCap,
@@ -12,17 +16,18 @@ import {
 } from "lucide-react";
 
 type Goal = {
-  label: string;
+  id: string;
+  label: Localized;
   Icon: LucideIcon;
   length: number;
 };
 
 const goals: Goal[] = [
-  { label: "Finish my EFZ", Icon: GraduationCap, length: 80 },
-  { label: "Further education", Icon: Rocket, length: 60 },
-  { label: "Learn Java", Icon: Code, length: 70 },
-  { label: "Stay fit", Icon: Dumbbell, length: 90 },
-  { label: "Travel", Icon: Plane, length: 50 },
+  { id: "1", label: { "en": "Finish my EFZ", "de": "EFZ abschliessen" }, Icon: GraduationCap, length: 80 },
+  { id: "2", label: { "en": "Further education", "de": "Weiterbildung" }, Icon: Rocket, length: 60 },
+  { id: "3", label: { "en": "Learn Java", "de": "Java lernen" }, Icon: Code, length: 70 },
+  { id: "4", label: { "en": "Stay fit", "de": "Fit bleiben" }, Icon: Dumbbell, length: 90 },
+  { id: "5", label: { "en":"Travel", "de": "Reisen" }, Icon: Plane, length: 50 },
 ];
 
 function Pendulum({ label, Icon, length }: Goal) {
@@ -40,7 +45,7 @@ function Pendulum({ label, Icon, length }: Goal) {
     const fromLeft = e.clientX < rect.left + rect.width / 2;
     swing(fromLeft ? -30 : 30);
   }
-
+  const locale = useLocale();
   return (
     <div
       onMouseEnter={handleEnter}
@@ -53,20 +58,21 @@ function Pendulum({ label, Icon, length }: Goal) {
         <div className="rounded-xl border border-white/10 bg-white/5 p-2 text-gray-200 sm:p-3">
           <Icon size={24} />
         </div>
-        <span className="mt-2 text-center text-[10px] leading-tight text-gray-400 sm:text-xs">{label}</span>
+        <span className="mt-2 text-center text-[10px] leading-tight text-gray-400 sm:text-xs">{pick(label, locale)}</span>
       </div>
     </div>
   );
 }
 
 export default function FutureGoals() {
+  const t = useTranslations("Goals");
   return (
     <section className="py-12">
-      <h2 className="text-2xl font-bold">What&apos;s next</h2>
+      <h2 className="text-2xl font-bold">{t("title")}</h2>
       <div className="mt-8 border-t border-white/20 pb-8">
         <div className="grid grid-cols-5">
           {goals.map((goal) => (
-            <Pendulum key={goal.label} {...goal} />
+            <Pendulum key={goal.id} {...goal} />
           ))}
         </div>
       </div>

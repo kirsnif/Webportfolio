@@ -20,14 +20,13 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-// React bug
-
 export default async function ProjectPage({ params }: PageProps) {
   const { locale, slug } = await params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
 
   const t = await getTranslations("Project");
+  const tt = await getTranslations("AllProjects");
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
@@ -35,7 +34,7 @@ export default async function ProjectPage({ params }: PageProps) {
         {t("return")}
       </Link>
 
-      <h1 className="mt-6 text-4xl font-bold">{project.title}</h1>
+      <h1 className="mt-6 text-4xl font-bold">{pick(project.title, locale)}</h1>
       <p className="mt-2 text-lg text-gray-400">{pick(project.summary, locale)}</p>
 
       <ul className="mt-6 flex flex-wrap gap-2">
@@ -48,7 +47,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
       <div className="mt-8 flex aspect-video items-center justify-center rounded-xl bg-white/5 text-gray-500">
         {project.image && (
-          <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+          <img src={project.image} alt={pick(project.title, locale)} className="h-full w-full object-cover" />
         )}
       </div>
 
@@ -67,7 +66,7 @@ export default async function ProjectPage({ params }: PageProps) {
               rel="noopener noreferrer"
               className="rounded-lg bg-violet-400 px-5 py-2 font-semibold text-black hover:bg-violet-300"
             >
-              View code
+              {tt("button")}
             </a>
           )}
         </div>

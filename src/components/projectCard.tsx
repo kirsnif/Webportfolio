@@ -12,11 +12,11 @@ export default function ProjectCard({ project }: { project: Project }) {
     >
       <div className="flex aspect-video items-center justify-center bg-white/5 text-gray-500">
         {project.image && (
-          <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+          <img src={project.image} alt={pick(project.title, locale)} className="h-full w-full object-cover" />
         )}
       </div>
       <div className="p-5">
-        <h3 className="text-lg font-semibold">{project.title}</h3>
+        <h3 className="text-lg font-semibold">{pick(project.title, locale)}</h3>
         <p className="mt-2 text-sm text-gray-400">{pick(project.summary, locale)}</p>
         <ul className="mt-4 flex flex-wrap gap-2">
           {project.tech.map((t) => (

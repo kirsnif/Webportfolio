@@ -50,7 +50,7 @@ export default function ContactForm() {
         <div className="grid gap-6 md:grid-cols-2">
           <div className="space-y-2">
             <label htmlFor="name" className="block text-sm font-semibold">
-              Name
+              {t("name")}
             </label>
             <input
               id="name"
@@ -58,14 +58,14 @@ export default function ContactForm() {
               type="text"
               required
               maxLength={100}
-              placeholder="Your name"
+              placeholder={t("tname")}
               className={inputClass}
             />
           </div>
 
           <div className="space-y-2">
             <label htmlFor="email" className="block text-sm font-semibold">
-              Email Address
+              {t("email")}
             </label>
             <input
               id="email"
@@ -73,7 +73,7 @@ export default function ContactForm() {
               type="email"
               required
               maxLength={200}
-              placeholder="Your email"
+              placeholder={t("temail")}
               className={inputClass}
             />
           </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
 
         <div className="space-y-2">
           <label htmlFor="message" className="block text-sm font-semibold">
-            Content
+            {t("content")}
           </label>
           <textarea
             id="message"
@@ -90,7 +90,7 @@ export default function ContactForm() {
             minLength={10}
             maxLength={5000}
             rows={5}
-            placeholder="Your message, ask me anything"
+            placeholder={t("tmessage")}
             className={`${inputClass} resize-y`}
           />
         </div>
@@ -105,17 +105,17 @@ export default function ContactForm() {
           disabled={status === "sending"}
           className="rounded-lg bg-violet-500 px-6 py-2 text-sm font-semibold text-black transition hover:bg-violet-300 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {status === "sending" ? "Sending..." : "Send message"}
+          {status === "sending" ? "Sending..." : t("send")}
         </button>
 
         {status === "success" && (
           <p role="status" className="text-sm text-green-400">
-            Thanks! I&apos;ll get back to you soon.
+            {t("success")}
           </p>
         )}
         {status === "error" && (
           <p role="alert" className="text-sm text-red-400">
-            Something went wrong. Please try again in a bit.
+            {t("error")}
           </p>
         )}
       </form>

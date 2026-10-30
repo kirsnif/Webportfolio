@@ -25,7 +25,16 @@
         "cv": "My CV"
     },
     "ContactForm": {
-        "title" : "Get in touch"
+        "title": "Get in touch",
+        "name": "Name",
+        "email": "Email Address",
+        "content": "Content",
+        "send": "Send message",
+        "tmessage": "Your message, ask me anything",
+        "tname": "Your Name",
+        "temail": "Your email",
+        "success": "Thanks! I'll get back to you soon.",
+        "error": "Something went wrong. Please try again in a bit."
     },
     "GreetingPers": {
         "title": "Get to know me",
@@ -35,6 +44,10 @@
     },
     "Hobbies": {
         "title": "Hobbies"
+    },
+    "AllProjects": {
+        "title": "My projects",
+        "button": "View Code"
     },
     "SomeProjects": {
         "title": "Some of my projects"
@@ -47,5 +60,11 @@
         "about": "About this project",
         "learned": "What I learned",
         "return": "← All projects"
+    },
+    "Timeline": {
+        "title": "Experience"
+    },
+    "Goals": {
+        "title": "What's next"
     }
 }

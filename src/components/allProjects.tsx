@@ -2,7 +2,7 @@ import type { Localized } from "@/i18n/localized";
 
 export type Project = {
   slug: string;
-  title: string;
+  title: Localized;
   image?: string;
   summary: Localized;
   description: Localized;
@@ -14,7 +14,10 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "webportfolio",
-    title: "Webportfolio",
+    title: {
+      "en": "Webportfolio",
+      "de": "Webportfolio"
+    },
     image: "/images/youHere.jpg",
     summary: { 
       en: "My personal portfolio website built with Next.js and Tailwind CSS.",
@@ -33,7 +36,10 @@ export const projects: Project[] = [
   },
   {
     slug: "attendance-tracker",
-    title: "Attendance Tracker",
+    title: {
+      "en": "Attendance Tracker",
+      "de": "Anwesenheitserfassungstool"
+    },
     image: "/images/codeAT.png",
     summary: {
       en: "A project built for my extensive learning report.",
@@ -52,7 +58,10 @@ export const projects: Project[] = [
   },
   {
     slug: "todo-app",
-    title: "To-Do App",
+    title: {
+      "en": "To-Do App",
+      "de": "To-Do App"
+    },
     image: "/images/TodoApp.png",
     summary: {
       en: ".NET project for tracking tasks.",
