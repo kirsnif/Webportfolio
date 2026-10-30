@@ -1,6 +1,8 @@
 import { Link } from "@/i18n/navigation"
 import { notFound } from "next/navigation";
 import { projects } from "@/components/allProjects";
+import { useLocale } from "next-intl";
+import { pick } from "@/i18n/localized";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -18,7 +20,10 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
+// React bug
+
 export default async function ProjectPage({ params }: PageProps) {
+  const locale = useLocale();
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
 
@@ -31,7 +36,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </Link>
 
       <h1 className="mt-6 text-4xl font-bold">{project.title}</h1>
-      <p className="mt-2 text-lg text-gray-400">{project.summary}</p>
+      <p className="mt-2 text-lg text-gray-400">{pick(project.summary, locale)}</p>
 
       <ul className="mt-6 flex flex-wrap gap-2">
         {project.tech.map((t) => (
@@ -48,10 +53,10 @@ export default async function ProjectPage({ params }: PageProps) {
       </div>
 
       <h2 className="mt-10 text-xl font-semibold">About this project</h2>
-      <p className="mt-3 text-gray-300">{project.description}</p>
+      <p className="mt-3 text-gray-300">{pick(project.description, locale)}</p>
 
       <h2 className="mt-10 text-xl font-semibold text-violet-400">What I learned</h2>
-      <p className="mt-3 text-gray-300">{project.learned}</p>
+      <p className="mt-3 text-gray-300">{pick(project.learned, locale)}</p>
 
       {(project.github) && (
         <div className="mt-10 flex gap-4">
