@@ -31,7 +31,7 @@ export default function Greeting() {
           </div>
           <div className="mt-8 flex">
             <Link
-              href="/contact"
+              href="/contact" //placeholder for now, will be replaced with CV link when available
               className="rounded-full border border-white/20 px-5 py-1 hover:border-white/50"
             >
               {t("cv")}

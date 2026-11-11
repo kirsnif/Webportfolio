@@ -1,8 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 # Portfolio
 
-Personal portfolio website of an apprentice application developer. Built with Next.js, TypeScript and Tailwind CSS.
+Bilingual (EN/DE) personal portfolio website of an apprentice application developer.
+
+**Live site:** https://kiera-portfolio.vercel.app
+
+### tech stack
+
+| Area | Technology |
+| --- | --- |
+| Framework | Next.js 16 (App Router, Turbopack) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Internationalization | next-intl v4 |
+| Validation | Zod |
+| Email | Resend |
+| Animation and icons | Motion, lucide-react |
+| Linting | ESLint 9 with eslint-config-next |
+| Hosting | Vercel |
 
 ## Getting Started
 
@@ -13,18 +27,24 @@ Personal portfolio website of an apprentice application developer. Built with Ne
 
 ### installation
 
-- git clone https://github.com/kirsnif/Webportfolio
-- cd Webportfolio
-- npm install
+```bash
+git clone https://github.com/kirsnif/Webportfolio
+cd Webportfolio
+npm install
+```
 
-### Environment variables
+### environment variables
 
-The contact form needs two variables. Create a file names .env.local in the project root:
+The contact form needs two variables. Create a file names .env.local in the project root. It is listed in .gitignore, so it's never commited.
 
-- RESEND_API_KEY=your_resend_api_key
-- CONTACT_TO_EMAIL=you<span>@example.com
+```env
+RESEND_API_KEY=your_resend_api_key
+CONTACT_TO_EMAIL=you<span>@example.com
+```
 
-### Run the development server
+### run the development server
 
-- npm run dev
+```bash
+npm run dev
+```
 
