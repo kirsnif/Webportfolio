@@ -30,7 +30,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Tailwind", "TypeScript"],
     learned: {
       en: "All the tools I used to build this website, including Next.js, Tailwind CSS, and TypeScript were new to me so I learned a lot about them while building this project. I also learned about responsive design as well as static routing.",
-      de: "Alle Tools, die ich zum Erstellen dieser Website verwendet habe, darunter Next.js, Tailwind CSS und TypeScript, waren für mich neu, sodass ich während der Arbeit an diesem Projekt viel darüber gelernt habe. Ausserdem habe ich mich mit responsivem Design sowie statischem Routing beschäftigt."
+      de: "Alle Tools, die ich zum Erstellen dieser Website verwendet habe, darunter Next.js, Tailwind CSS und TypeScript, waren für mich neu. Deswegen habe ich während der Arbeit an diesem Projekt viel darüber gelernt. Ausserdem habe ich mich mit responsivem Design sowie statischem Routing beschäftigt."
     },
     github: "https://github.com/kirsnif/Webportfolio",
   },
