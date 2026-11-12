@@ -32,8 +32,8 @@ const timeline = [
   {
     id: "2",
     period: {
-      "en": "05 / 2025 – 09 / 2025",
-      "de": "05 / 2025 – 09 / 2025"
+      "en": "05 / 2025 – 08 / 2025",
+      "de": "05 / 2025 – 08 / 2025"
     },
     title: {
       "en": "Career Preparation IT",
